@@ -1,0 +1,40 @@
+/* Keep the supplied visual design while accommodating narrow portfolio frames. */
+@media(max-width:700px){
+  .side{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .side .card,.layout,.climate-controls,.music-detail{min-width:0}
+  .pagehead{flex-wrap:wrap;gap:12px}
+  .caption{flex-wrap:wrap;gap:8px}
+  .playlist button{min-width:0}
+}
+@media(max-width:480px){
+  .shell{padding-inline:12px}
+  .brand{font-size:12px;letter-spacing:1px}
+  .mark{font-size:22px;margin-right:6px}
+  .status{font-size:10px;gap:6px}
+  .side{grid-template-columns:minmax(0,1fr)}
+  .side .row{gap:9px;flex-wrap:wrap}
+  .map-top{left:12px;right:12px;gap:8px}
+  .map-label{padding:11px 12px;min-width:0;font-size:12px;overflow-wrap:anywhere}
+  .map-tools{flex:none}
+  .map-bottom{left:12px;right:12px;gap:8px}
+  .map-bottom b{font-size:18px}
+  .eyebrow{letter-spacing:1.5px;overflow-wrap:anywhere}
+  .full{padding:16px}
+  .climate-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .stepper{gap:8px}
+  .stepper button{width:44px;height:44px}
+  .toggle{flex-wrap:wrap;gap:5px;min-height:44px;padding:12px 8px;font-size:11px}
+  .climate-bottom{gap:8px}
+  .climate-bottom button{padding-inline:14px}
+  .fan{gap:8px;font-size:12px;max-width:100%}
+  .fan input{min-width:0;width:120px}
+  .drive-controls{left:12px;right:12px;padding:14px;gap:14px}
+  .drive-controls>label{display:flex;flex-wrap:wrap;gap:8px;font-size:12px}
+  .mode-buttons{flex-wrap:wrap;gap:5px}
+  .mode-buttons button{padding-inline:12px}
+  .cluster-speed{left:25%;right:25%}
+  .shell .temperature{min-width:30px}
+  .shell nav button small{font-size:10px}
+  .atelier-photo-top{flex-wrap:wrap;gap:8px}
+  .atelier-heading{flex-wrap:wrap}
+}
