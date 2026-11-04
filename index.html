@@ -1,203 +1,44 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f5f7">
-  <meta name="description" content="王瑞琪的产品与交互设计作品集。2027 届北京理工大学设计学硕士，关注车载 HMI、AI 产品与复杂任务体验。">
-  <title>王瑞琪 · 产品与交互设计作品集</title>
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./portfolio.css">
-  <script src="./motion.js" defer></script>
-  <script src="./portfolio.js" defer></script>
-  <script src="./obsidian-embed.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">跳转到内容</a>
-  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
-    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
-    <symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
-    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
-    <symbol id="overview" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M11 10v10"/></symbol>
-    <symbol id="navigation" viewBox="0 0 24 24"><path d="m12 3 8 18-8-5-8 5Z"/></symbol>
-    <symbol id="vehicle" viewBox="0 0 24 24"><path d="m5 9 2-5h10l2 5M4 10h16v9H4zM7 19v2m10-2v2M4 14h3m10 0h3"/><path d="M9 16h6"/></symbol>
-    <symbol id="climate" viewBox="0 0 24 24"><path d="M12 2v20M3.34 7l17.32 10M3.34 17 20.66 7M9 4l3 3 3-3M9 20l3-3 3 3M3.5 10.5l4.1-1.1-1.1-4.1M20.5 13.5l-4.1 1.1 1.1 4.1M6.5 18.7l1.1-4.1-4.1-1.1M17.5 5.3l-1.1 4.1 4.1 1.1"/></symbol>
-    <symbol id="media" viewBox="0 0 24 24"><path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="17" cy="16" rx="3" ry="2.5"/></symbol>
-    <symbol id="charging" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></symbol>
-  </defs></svg>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>王瑞琪 · AI 产品与交互作品集</title><meta name="description" content="王瑞琪的 AI 产品与交互设计作品集：科研写作工作台、JD × 简历助手，以及车载 HMI 交互探索。"><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><style>
+:root{--sage:#aab7a1;--ink:#293c31;--cream:#f0efe3;--line:rgba(41,60,49,.32)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:Arial,"Noto Sans CJK SC","Microsoft YaHei",sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:7px}.hero{background:var(--sage);position:relative;isolation:isolate;overflow:hidden;min-height:820px;height:100svh;max-height:1100px;padding:0 4.5vw}header{height:92px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font-size:14px;position:relative;z-index:5}.brand{font-weight:600;font-size:18px;letter-spacing:.06em}.brand span{font-weight:400;font-size:12px;margin-left:12px}nav{display:flex;gap:30px}.composition{position:absolute;inset:92px 0 0}.name{position:absolute;top:5%;left:1.4%;width:97.2%;margin:0;line-height:.9;color:var(--cream);font-size:clamp(130px,20.5vw,340px);font-weight:700;letter-spacing:-.065em;white-space:nowrap;transform:scaleX(.94);transform-origin:left center;z-index:0}.portrait{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(64%,1000px);height:auto;top:0;bottom:auto;z-index:1;display:flex;justify-content:center;align-items:flex-start;pointer-events:none}.placeholder{width:100%;height:100%;position:relative;display:grid;place-items:center}.placeholder:before{content:"";position:absolute;width:46%;height:39%;top:3%;border:1px dashed rgba(41,60,49,.45);border-radius:48% 48% 45% 45%}.placeholder:after{content:"";position:absolute;inset:38% 2% -16%;border:1px dashed rgba(41,60,49,.45);border-radius:44% 44% 0 0}.placeholder-copy{position:relative;z-index:1;text-align:center;font-size:13px;line-height:1.9;background:var(--sage);padding:15px;max-width:250px}.placeholder-copy strong{font-size:16px;font-weight:500;display:block}.portrait img{display:block;height:auto;width:100%;max-width:none;flex:none}.side{position:absolute;z-index:3;top:43%;width:20%;max-width:280px}.intro{left:4.5%}.detail{right:4.5%;top:46%}.eyebrow{font-size:12px;letter-spacing:.06em;margin:0 0 23px}.intro h2{font-size:clamp(26px,2.35vw,38px);font-weight:500;line-height:1.4;margin:0 0 18px;letter-spacing:-.035em}.intro p,.detail p{font-size:14px;line-height:1.95;margin:0 0 23px}.detail h2{font-size:13px;font-weight:500;margin:0 0 14px}.detail ul{padding:0;list-style:none;margin:0 0 23px;font-size:14px;line-height:2}.text-link{display:inline-flex;gap:30px;align-items:center;border-bottom:1px solid var(--ink);padding:0 0 9px;font-size:14px}.footerline{position:absolute;bottom:28px;left:4.5%;right:4.5%;display:flex;justify-content:space-between;font-size:11px;z-index:3}.works{padding:72px 8vw 90px;max-width:1500px;margin:auto}.works h2{font-weight:500;font-size:30px;margin:0 0 12px}.works>p{font-size:14px;line-height:1.8}.project{display:grid;grid-template-columns:50px 1fr 1fr;gap:20px;padding:30px 0;border-top:1px solid var(--line);margin-top:28px}.project h3{margin:0 0 10px;font-size:21px;font-weight:500}.project p{margin:0;font-size:14px;line-height:1.9}.number{font-size:12px;padding-top:6px}.project small{font-size:12px}.review{border-top:1px solid var(--line);padding-top:20px;margin-top:40px;font-size:12px;line-height:1.9}.review strong{font-weight:600}.about{margin-top:55px;max-width:670px}.about p{line-height:1.9;font-size:15px}@media(min-width:1700px){.name{font-size:350px}.composition{max-width:1900px;margin:auto}.side{width:20%}}@media(max-width:1000px){.hero{height:auto;min-height:0;max-height:none;padding:0 24px}header{height:76px}.brand{font-size:16px}.brand span{display:none}nav{font-size:12px;gap:21px}.composition{position:relative;inset:auto;display:grid;grid-template-columns:1fr;min-height:0;padding-top:42px}.name{font-size:21vw;top:42px;left:-10px;width:calc(100% + 20px);transform:none;letter-spacing:-.065em}.portrait{position:relative;left:50%;top:auto;bottom:auto;transform:translateX(-50%);width:calc(100% + 48px);height:clamp(420px,66vw,580px);margin-top:8px;grid-row:1;overflow:hidden}.portrait img{width:clamp(480px,82vw,800px);height:auto;margin-top:-12px}.placeholder-copy{font-size:11px;max-width:210px}.placeholder-copy strong{font-size:14px}.placeholder:before{width:40%;top:3%}.placeholder:after{inset:38% 5% -3%}.side{position:relative;inset:auto;max-width:none;width:100%;z-index:3}.intro{padding-top:30px}.eyebrow{font-size:11px;margin:0 0 16px}.intro h2{font-size:29px;max-width:320px}.intro p{max-width:340px}.detail{border-top:1px solid var(--line);padding-top:25px;margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.detail h2{grid-column:1/-1}.detail ul{font-size:12px}.detail p{font-size:12px}.footerline{position:relative;inset:auto;padding:24px 0;font-size:10px;border-top:1px solid var(--line);margin-top:5px}.works{padding:48px 24px}.works h2{font-size:26px}.project{grid-template-columns:25px 1fr;gap:12px}.project>p{grid-column:2}.project h3{font-size:19px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#top" aria-label="王瑞琪，返回顶部">王瑞琪<span>RUIQI WANG</span></a>
-      <nav aria-label="主导航">
-        <a href="#work">作品</a>
-        <a href="#about">关于</a>
-        <a class="nav-demo" href="#hmi-showroom" data-showroom-view="overview">体验 HMI</a>
-      </nav>
-    </div>
-  </header>
+/* AI project extension; hero rules above are preserved. */
+.ai-work{max-width:1500px;margin:auto;padding:96px 8vw 72px}.section-kicker{font-size:11px;letter-spacing:.17em;text-transform:uppercase;margin:0 0 22px}.ai-heading{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}.ai-heading h2{font-size:clamp(34px,4vw,58px);font-weight:500;letter-spacing:-.045em;line-height:1.25;margin:0}.ai-heading>p{font-size:14px;line-height:1.9;max-width:320px;margin:0}.ai-index{display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding:18px 0 42px;font-size:12px}.ai-index a{border-bottom:1px solid transparent;padding-bottom:4px}.ai-index a:hover{border-color:var(--ink)}.ai-case{scroll-margin-top:24px;border-top:1px solid var(--line);padding-top:26px;margin-bottom:64px}.case-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:11px;margin-bottom:28px}.case-meta .case-no{margin-right:auto;font-variant-numeric:tabular-nums;letter-spacing:.1em}.pill{border:1px solid var(--line);border-radius:40px;padding:7px 12px}.ai-case-head{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start;margin-bottom:32px}.ai-case-head h3{font-weight:500;font-size:clamp(28px,3vw,43px);line-height:1.3;letter-spacing:-.035em;margin:0 0 15px}.case-sub{font-size:14px;line-height:1.9;margin:0;max-width:460px}.case-lead{margin:3px 0 0;font-size:15px;line-height:2}.diagram{border-radius:3px;padding:32px;background:#e0e5d8;border:1px solid rgba(41,60,49,.14);overflow:hidden}.diagram-label{display:flex;justify-content:space-between;gap:18px;font-size:10px;letter-spacing:.08em;margin-bottom:30px;line-height:1.7}.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.flow-node{position:relative;min-height:126px;border:1px solid var(--line);padding:20px 16px;background:rgba(255,255,255,.32)}.flow-node:not(:last-child):after{content:'→';position:absolute;right:-16px;top:52px;font-size:13px}.flow-node small{font-size:10px;opacity:.8;display:block;margin-bottom:18px}.flow-node strong{display:block;font-weight:500;font-size:17px;margin-bottom:9px}.flow-node p{font-size:11px;line-height:1.8;margin:0}.flow-caption{font-size:12px;line-height:1.8;margin:22px 0 0;border-top:1px solid var(--line);padding-top:17px}.case-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;padding:30px 0 0}.case-details h4{font-size:13px;font-weight:600;margin:0 0 13px}.case-details p{font-size:13px;line-height:1.95;margin:0}.case-foot{display:flex;justify-content:space-between;gap:28px;align-items:start;border-top:1px solid var(--line);padding-top:20px;margin-top:28px}.case-foot p{font-size:11px;line-height:1.9;max-width:720px;margin:0}.case-foot a{font-size:12px;white-space:nowrap;border-bottom:1px solid var(--ink);padding-bottom:5px}.jd-diagram{background:#e6e1d5}.jd-board{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:24px;align-items:stretch}.jd-column{border:1px solid var(--line);padding:22px;background:rgba(255,255,255,.35);min-width:0}.jd-column h4{font-size:13px;margin:0 0 22px;font-weight:500}.doc-stack{display:flex;gap:8px;margin-bottom:16px}.doc{border:1px solid var(--line);padding:17px 10px;width:50%;font-size:11px;text-align:center;line-height:1.8}.doc.selected{background:#c4cfbd}.mini-note{font-size:11px;line-height:1.8;margin:0}.field{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:11px}.field:last-child{border-bottom:0}.output-row{border-bottom:1px solid var(--line);padding:12px 0;font-size:11px;line-height:1.8}.output-row:first-of-type{padding-top:0}.output-row span{display:block;opacity:.7;font-size:10px}.related{display:grid;grid-template-columns:1fr 1.6fr;gap:50px;padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.related h3{font-size:23px;font-weight:500;margin:0 0 10px}.related p{font-size:13px;line-height:1.9;margin:0}.related .section-kicker{font-size:10px;margin-bottom:14px}.related-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.related-tags span{font-size:11px;border-bottom:1px solid var(--line);padding-bottom:7px}.other-work{padding-top:35px}.other-work h2{font-size:27px}.about{margin-top:65px}.review{color:#536051}.endline{display:flex;justify-content:space-between;margin-top:45px;padding-top:20px;border-top:1px solid var(--line);font-size:11px}
+@media(max-width:1000px){.ai-work{padding:56px 24px 32px}.ai-heading{display:block;margin-bottom:30px}.ai-heading>p{margin-top:24px;max-width:520px}.ai-case-head{gap:28px}.diagram{padding:24px}.flow{gap:12px}.flow-node{padding:16px 12px}.flow-node:not(:last-child):after{right:-12px}.jd-board{gap:12px}.jd-column{padding:16px}.case-details{gap:24px}.related{gap:28px}}
+@media(max-width:640px){.ai-case-head{grid-template-columns:1fr;gap:18px}.ai-heading h2{font-size:36px}.ai-index{gap:17px;font-size:11px;padding-bottom:30px}.case-meta{gap:8px}.case-meta .case-no{width:100%;margin-bottom:7px}.diagram{padding:20px 16px}.diagram-label{display:block;margin-bottom:20px}.diagram-label span{display:block;margin-top:6px}.flow{grid-template-columns:1fr 1fr;gap:12px}.flow-node:not(:last-child):after{content:none}.flow-node{min-height:140px}.flow-node strong{font-size:16px}.case-details{grid-template-columns:1fr;gap:23px}.case-foot{flex-direction:column;gap:16px}.jd-board{grid-template-columns:1fr}.jd-column{padding:20px}.jd-column h4{margin-bottom:15px}.related{grid-template-columns:1fr;gap:20px}.ai-case{margin-bottom:48px}.endline{gap:20px;font-size:10px}}
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy section-container">
-        <p class="eyebrow hero-identity">王瑞琪｜北京理工大学设计学硕士 · 2027 届</p>
-        <p class="hero-specialties">车辆 HMI × AI 产品 × 交互设计</p>
-        <h1 id="hero-title"><span class="hero-phrase">理解出行场景，</span><wbr><span class="hero-phrase">定义座舱体验。</span></h1>
-        <p class="hero-description">从需求梳理、功能设计到交互原型与实车验证，让车内交互更清晰、易用。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#hmi-showroom" data-showroom-view="overview">体验 HMI</a>
-          <a class="text-link" href="#work">浏览作品 <svg class="icon"><use href="#chevron"/></svg></a>
-        </div>
-      </div>
+</style></head><body>
+<section class="hero" id="top" aria-label="个人介绍"><header><a class="brand" href="#top">王瑞琪<span>Ruiqi Wang</span></a><nav aria-label="主要导航"><a href="#work">作品</a><a href="#about">关于我</a></nav></header><div class="composition"><h1 class="name" aria-label="Ruiqi Wang">RUIQI WANG</h1><div class="portrait"><img src="./assets/ruiqi-portrait-hero.webp" width="1086" height="1448" alt="王瑞琪的 AI 卡通个人形象，大幅近景，长发、蓝色西装和设计主题贴纸"></div><div class="side intro"><p class="eyebrow">产品设计 · 交互设计</p><h2>把复杂的操作，<br>整理成清楚的流程。</h2><p>我是王瑞琪。从工业设计出发，<br>做过车辆 HMI 的交互梳理，<br>也在探索 AI 产品与智能硬件。</p><a class="text-link" href="#work">看我的作品 <span aria-hidden="true">↘</span></a></div><div class="side detail"><h2>我参与的工作</h2><ul><li>梳理需求与操作流程</li><li>绘制原型，编写 PRD</li><li>跟进开发与实车验证</li></ul><p>作品里会说明：<br>问题是什么、我做了什么，<br>以及方案如何得到验证。</p></div></div><div class="footerline"><span>产品 / 界面 / 硬件</span><span>向下看作品 ↓</span></div></section>
+<main>
+<section class="ai-work" id="work" aria-labelledby="work-title">
+<p class="section-kicker">Selected work / AI products</p>
+<div class="ai-heading"><h2 id="work-title">让 AI 能力，<br>进入具体的工作流程。</h2><p>从科研写作到求职沟通，关注用户怎样输入信息、理解结果，并继续完成下一步。</p></div>
+<nav class="ai-index" aria-label="作品目录"><a href="#ai-writing">01 科研写作工作台 ↘</a><a href="#jd-assistant">02 JD × 简历助手 ↘</a><a href="#other-work">更多交互探索 ↘</a></nav>
+<article class="ai-case" id="ai-writing">
+<div class="case-meta"><span class="case-no">01 / RESEARCH & WRITING</span><span class="pill">实习项目 · 行至智能</span><span>AI 产品经理 · 产品与交互设计</span></div>
+<div class="ai-case-head"><div><h3>AI 科研写作工作台</h3><p class="case-sub">把资料、结构与生成结果，组织成可继续编辑的写作流程。</p></div><p class="case-lead">科研长文需要经历资料整理、大纲规划、章节生成与反复修改。我参与功能调研、网站逻辑梳理与需求优先级判断，也关注长文评估结果如何帮助用户定位问题。</p></div>
+<div class="diagram" role="img" aria-label="科研写作流程示意：资料与知识检索、大纲与思维导图、章节生成与润色、引用与长文评估。这是作品集概念图，不是产品截图。">
+<div class="diagram-label">WRITING WORKFLOW<span>流程概念图 · 非实际产品界面</span></div>
+<div class="flow"><div class="flow-node"><small>01 / INPUT</small><strong>资料与知识</strong><p>整理参考资料<br>知识检索 / RAG</p></div><div class="flow-node"><small>02 / STRUCTURE</small><strong>先搭好结构</strong><p>大纲规划<br>思维导图</p></div><div class="flow-node"><small>03 / CREATE</small><strong>逐章形成内容</strong><p>章节生成<br>编辑与润色</p></div><div class="flow-node"><small>04 / REVIEW</small><strong>回到内容核查</strong><p>引用与参考依据<br>长文评估</p></div></div>
+<p class="flow-caption">延展场景：图示生成与 PPT 内容组织，让文本之外的表达也能进入同一任务链路。</p></div>
+<div class="case-details"><div><h4>场景与问题</h4><p>长文任务跨越多个步骤。除了生成内容，用户还需要看清文章结构、找到修改位置，并确认引用与依据。</p></div><div><h4>我参与的工作</h4><p>调研功能与评估思路，梳理页面和流程；围绕长文评估组织维度、结果展示与提示词输出格式。</p></div><div><h4>一个具体切入点</h4><p>针对评估结果格式不统一、缺少评分的问题，调整提示词字段并补充示例，交由后端接入后观察输出变化。</p></div></div>
+<div class="case-foot"><p>贡献边界：这里呈现产品需求与交互层面的参与，不代表独立完成模型、RAG 架构或全部工程开发。暂不展示未经核实的效率与使用量数据。</p></div>
+</article>
+<article class="ai-case" id="jd-assistant">
+<div class="case-meta"><span class="case-no">02 / PERSONAL AI TOOL</span><span class="pill">个人项目 · 有代码仓库</span><span>JD × 简历 · 打招呼助手</span></div>
+<div class="ai-case-head"><div><h3>让每次求职沟通，<br>更贴近具体岗位。</h3><p class="case-sub">把多份简历与批量 JD 整理在一起，再生成对应的打招呼语。</p></div><p class="case-lead">面对多个岗位，重复阅读 JD、寻找简历里的相关经历、改写开场白容易变成机械工作。这个个人项目把输入、结构化解析和批量生成连接起来。</p></div>
+<div class="diagram jd-diagram" role="img" aria-label="JD 简历助手流程示意：管理多份简历并选择当前版本，解析批量 JD，生成每个岗位的打招呼语。此图为功能结构示意，不是运行截图。">
+<div class="diagram-label">FROM DOCUMENTS TO MESSAGES<span>功能结构示意 · 非运行截图</span></div>
+<div class="jd-board"><div class="jd-column"><h4>01 / 选择当前简历</h4><div class="doc-stack"><div class="doc selected">简历 A<br>当前使用</div><div class="doc">简历 B<br>备选版本</div></div><p class="mini-note">多份简历管理<br>每次基于选中的一份生成</p></div><div class="jd-column"><h4>02 / 批量解析 JD</h4><div class="field"><span>岗位信息</span><span>公司 / 职位</span></div><div class="field"><span>需求信息</span><span>关键词 / 要点</span></div><div class="field"><span>简历信息</span><span>画像 / 经历</span></div></div><div class="jd-column"><h4>03 / 按岗位生成</h4><div class="output-row">岗位 A<span>对应的沟通重点与招呼语</span></div><div class="output-row">岗位 B<span>对应的沟通重点与招呼语</span></div><p class="mini-note" style="margin-top:15px">生成后由用户检查与使用</p></div></div>
+<p class="flow-caption">输入支持文件、JD 截图与粘贴文本；信息解析后，可选择岗位进行批量生成。</p></div>
+<div class="case-details"><div><h4>输入先整理清楚</h4><p>支持多份简历与多条 JD，区分当前简历和参与生成的岗位，减少反复切换材料的操作。</p></div><div><h4>让中间结果可见</h4><p>把简历画像、岗位信息与关键词以结构化结果展示，让用户在生成前理解输入被怎样读取。</p></div><div><h4>保留人工判断</h4><p>输出是沟通草稿。用户仍需检查事实、措辞与岗位相关性，再决定如何使用。</p></div></div>
+<div class="case-foot"><p>项目展示范围：简历与 JD 管理、信息解析及招呼语生成。此处展示设计思路与功能结构，不提供在线生成服务；具体实现可查看代码仓库。</p><a href="https://github.com/Ruiqi1213/jd-resume-assistant" target="_blank" rel="noopener noreferrer">查看项目代码 ↗</a></div>
+</article>
+<aside class="related"><div><p class="section-kicker">Connected capability</p><h3>知识库与 RAG</h3><p>作为写作链路中的相关能力呈现。</p></div><div><p>关注检索到的资料如何进入生成上下文，以及用户如何查看参考依据、判断内容是否可信。相关内容体现产品与交互设计思考，非独立的底层技术架构实现。</p><div class="related-tags"><span>资料组织</span><span>检索与生成的衔接</span><span>来源与引用</span><span>结果核查</span></div></div></aside>
+</section>
+<section class="works other-work" id="other-work"><p class="section-kicker">More / Interaction design</p><h2>更多交互与场景探索</h2><article class="project"><span class="number">03</span><div><h3>一控多车辆 HMI 交互优化</h3><small>项目经历 · 交互与流程设计</small></div><p>基于操作员反馈，梳理功能与操作流程；负责原型和 PRD，参与部分高保真绘制，并跟进实车验证。</p></article><article class="project"><span class="number">04</span><div><h3>通勤座舱交互演示</h3><small>独立概念 · 消费级 HMI 探索</small></div><p>围绕导航、音乐、空调及驾驶与驻车状态组织界面。静态交互概念，不代表量产车载系统或真实车辆控制。<br><a class="text-link" href="./hmi.html?view=overview" target="_blank" rel="noopener noreferrer">体验六屏交互 ↗</a></p></article>
+<p><a class="text-link" href="./hmi-portfolio.html">浏览完整 HMI 作品与 OBSIDIAN 演示 ↗</a></p>
+<section class="about" id="about"><h2>关于我的设计方法</h2><p>先梳理人在什么场景下完成什么任务，再决定信息如何组织、操作如何连接。用原型把方案讲清楚，也关注它在实际使用中是否说得通。</p></section>
 
-      <div class="showroom section-container" id="hmi-showroom" tabindex="-1" role="region" aria-labelledby="showroom-title">
-        <div class="showroom-heading"><h2 id="showroom-title">六个界面，一段从容的旅程。</h2><p>点击下方场景，原位切换；屏幕内也可以直接操作。</p></div>
-        <nav class="screen-nav" aria-label="HMI 六屏展厅">
-          <a href="./hmi.html?view=overview" data-preview-view="overview" aria-controls="hmi-preview" class="active" aria-current="page"><svg class="icon"><use href="#overview"/></svg><span>座舱总览</span><small>Overview</small></a>
-          <a href="./hmi.html?view=navigation" data-preview-view="navigation" aria-controls="hmi-preview"><svg class="icon"><use href="#navigation"/></svg><span>导航</span><small>Navigation</small></a>
-          <a href="./hmi.html?view=vehicle" data-preview-view="vehicle" aria-controls="hmi-preview"><svg class="icon"><use href="#vehicle"/></svg><span>车辆状态</span><small>Vehicle</small></a>
-          <a href="./hmi.html?view=climate" data-preview-view="climate" aria-controls="hmi-preview"><svg class="icon"><use href="#climate"/></svg><span>空调舒适</span><small>Climate</small></a>
-          <a href="./hmi.html?view=media" data-preview-view="media" aria-controls="hmi-preview"><svg class="icon"><use href="#media"/></svg><span>音乐</span><small>Music</small></a>
-          <a href="./hmi.html?view=charging" data-preview-view="charging" aria-controls="hmi-preview"><svg class="icon"><use href="#charging"/></svg><span>充电</span><small>Charging</small></a>
-        </nav>
-        <figure class="screen-figure">
-          <div class="screen-stage" id="screen-stage">
-            <iframe id="hmi-preview" src="./hmi.html?view=overview&amp;embed=1" title="新通勤 HMI 座舱总览交互演示" width="1440" height="900" scrolling="no" loading="eager"></iframe>
-          </div>
-          <figcaption><span>新通勤 <span class="caption-divider">/</span> 车载 HMI 交互概念</span><a class="screen-full-link" data-full-demo href="./hmi.html?view=overview" target="_blank" rel="noopener">打开完整演示 <span>（新标签页）</span></a></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="work-section section-container" id="work" aria-labelledby="work-title">
-      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="work-title">让设计，具体可见。</h2></div><p>真实项目的思考。<br>独立概念的探索。</p></div>
-      <div class="filter-bar" role="group" aria-label="筛选作品">
-        <button class="filter active" type="button" data-filter="all" aria-pressed="true">全部 <span>06</span></button>
-        <button class="filter" type="button" data-filter="experience" aria-pressed="false">经历复盘 <span>03</span></button>
-        <button class="filter" type="button" data-filter="concept" aria-pressed="false">独立概念 <span>03</span></button>
-      </div>
-      <p class="sr-only" id="filter-status" aria-live="polite">展示全部 6 个项目</p>
-
-      <div class="projects-grid">
-        <article class="project commute-project project-wide" data-category="concept" id="project-commute">
-          <div class="commute-copy">
-            <div class="project-meta"><span class="tag">独立概念</span><span>01 / VEHICLE HMI</span></div>
-            <h3>新通勤。<span class="commute-title-sub">车载 HMI 交互设计</span></h3>
-            <p>从出发到抵达，连接座舱总览、导航、车辆、空调、音乐与充电，让信息与操作井然有序。</p>
-            <ul class="commute-scope" aria-label="项目设计范围"><li>六屏交互</li><li>驾驶与驻车模式</li><li>状态与操作反馈</li></ul>
-            <div class="project-actions"><a class="text-link" href="#hmi-showroom" data-showroom-view="overview">体验六屏交互</a><button class="text-link subtle-link" type="button" data-project="commute">概念说明 <span>＋</span></button></div>
-            <small class="project-disclosure">独立网页概念 · 非 Android 或车规实现</small>
-          </div>
-          <div class="vehicle-visual">
-            <div class="vehicle-preview-header">
-              <div><strong>车辆状态</strong><span>界面内容示意</span></div>
-              <span class="vehicle-demo-badge">演示数据</span>
-            </div>
-            <div class="vehicle-stage">
-              <div class="vehicle-fallback" aria-hidden="true"><span>新通勤</span><strong>车辆状态预览</strong></div>
-              <img class="vehicle-render" src="./assets/hmi-silver-car.png" alt="完整展示的无品牌银色概念旅行车，AI 辅助视觉" width="1774" height="887" loading="lazy">
-            </div>
-            <dl class="vehicle-preview-metrics" aria-label="车辆状态演示数据">
-              <div><dt>电量</dt><dd>68<span>%</span></dd></div>
-              <div><dt>续航</dt><dd>326<span>km</span></dd></div>
-              <div><dt>车锁状态</dt><dd class="vehicle-lock-status">已锁车</dd></div>
-            </dl>
-            <div class="vehicle-preview-footer"><span class="vehicle-visual-label">AI 辅助概念车辆视觉 · 非量产车型</span></div>
-          </div>
-        </article>
-
-        <article class="project obsidian-project project-wide" data-category="concept" id="project-obsidian" aria-labelledby="obsidian-title">
-          <div class="obsidian-summary">
-            <div class="obsidian-copy">
-              <div class="project-meta"><span class="tag">独立概念</span><span>02 / SMART COCKPIT</span></div>
-              <h3 id="obsidian-title">OBSIDIAN<span>智能座舱 HMI 概念设计</span></h3>
-              <p>面向中高端新能源汽车，以黑金配色建立清晰的信息层级。连接导航、多媒体、数字仪表、座舱舒适与个性化设置，探索从容的座舱交互。</p>
-              <ul class="obsidian-scope" aria-label="项目交互范围"><li>五大模块</li><li>双区温控与座椅</li><li>驾驶模式切换</li></ul>
-              <div class="project-actions">
-                <button class="obsidian-launch" type="button" id="obsidian-toggle" aria-expanded="false" aria-controls="obsidian-demo" hidden>在本页体验</button>
-                <button class="text-link" type="button" data-project="obsidian">概念说明 <span>＋</span></button>
-              </div>
-              <a class="obsidian-full-link" href="./obsidian/index.html" target="_blank" rel="noopener noreferrer">打开完整演示 <span>（新标签页）</span></a>
-              <small class="project-disclosure">个人独立概念 · 虚构数据演示 · 不控制真实车辆</small>
-            </div>
-            <figure class="obsidian-preview">
-              <img src="./obsidian/assets/navigation.png" alt="OBSIDIAN 原始导航概念视觉，黑金界面与城市路线示意" width="1672" height="941" loading="lazy" decoding="async">
-              <figcaption><span>导航 · 黑金信息层级</span><span>原始概念视觉预览</span></figcaption>
-            </figure>
-          </div>
-          <section class="obsidian-demo" id="obsidian-demo" aria-label="OBSIDIAN 交互演示" hidden>
-            <div class="obsidian-demo-bar"><div><strong>OBSIDIAN · 交互演示</strong><span id="obsidian-demo-status" role="status" aria-live="polite">点击体验后加载</span></div><button id="obsidian-close" type="button" aria-label="收起 OBSIDIAN 演示">收起演示 ×</button></div>
-            <div class="obsidian-mount" id="obsidian-mount"></div>
-            <p class="obsidian-demo-note">可在演示内滚动浏览；所有数据与操作均为模拟。本页不保存设置，收起后重置。</p>
-          </section>
-        </article>
-
-        <article class="project ai-project project-wide" data-category="experience" id="project-ai">
-          <div class="project-copy ai-copy">
-            <div class="project-meta"><span class="tag">经历复盘</span><span>03 / AI PRODUCT</span></div>
-            <h3>AI 智能写作台。<br>让思路，持续向前。</h3>
-            <p>连接大纲、知识检索与写作，<br class="desktop-br">让 AI 的能力成为连续的任务体验。</p>
-            <button class="text-link" type="button" data-project="ai">了解项目 <svg class="icon"><use href="#chevron"/></svg></button>
-          </div>
-          <button class="ai-visual" type="button" data-project="ai" aria-label="查看AI 智能写作台 AI 科研工作台项目详情">
-            <div class="ai-image-frame"><img src="./assets/ai-writing-concept.png" alt="AI 科研写作独立概念改版，展示大纲、正文编辑与引用核对；非实习原始交付" width="1586" height="992" loading="lazy"></div>
-          </button>
-          <p class="visual-disclosure">界面为另行制作的独立概念改版，非实习原始交付。</p>
-        </article>
-
-        <article class="project experience-project" data-category="experience" id="project-control">
-          <div class="project-copy">
-            <div class="project-meta"><span class="tag">经历复盘</span><span>04 / PROFESSIONAL HMI</span></div>
-            <h3>一控多车辆 HMI。<br>复杂任务，清楚呈现。</h3>
-            <p>从操作员反馈出发，重新梳理既有功能与信息层级。</p>
-            <button class="text-link" type="button" data-project="control">阅读复盘 <svg class="icon"><use href="#chevron"/></svg></button>
-          </div>
-          <button class="abstract-visual control-visual" type="button" data-project="control" aria-label="查看一控多车辆 HMI 改版经历复盘">
-            <div class="abstract-window" aria-hidden="true">
-              <div class="window-chrome"><i></i><i></i><i></i><span>工作概览</span></div>
-              <div class="work-layout"><div class="work-rail"><span class="selected"></span><span></span><span></span></div><div class="work-main"><span class="work-overline">当前任务</span><strong>信息，各就其位。</strong><div class="work-progress"><span></span></div><div class="work-lines"><i></i><i></i></div><div class="work-bottom"><span>任务阶段</span><span>使用频次</span><span>信息层级</span></div></div></div>
-            </div>
-            <span class="abstract-caption">通用信息组织示意 · 非原始系统界面</span>
-          </button>
-        </article>
-
-        <article class="project experience-project roles-project" data-category="experience" id="project-roles">
-          <div class="project-copy">
-            <div class="project-meta"><span class="tag">经历复盘</span><span>05 / INFORMATION DESIGN</span></div>
-            <h3>多角色 HMI。<br>不同视角，共同理解。</h3>
-            <p>区分共享信息与角色所需，建立角色、信息与屏幕的对应。</p>
-            <button class="text-link" type="button" data-project="roles">阅读复盘 <svg class="icon"><use href="#chevron"/></svg></button>
-          </div>
-          <button class="abstract-visual role-visual" type="button" data-project="roles" aria-label="查看多角色 HMI 信息架构项目详情">
-            <div class="role-composition" aria-hidden="true"><div class="role-sheet role-sheet-back"><span>角色 B</span><i></i><i></i><i></i></div><div class="role-sheet role-sheet-front"><span>角色 A</span><strong>共享信息</strong><div class="role-rule"></div><i></i><i></i><small>一致的信息基础</small></div><div class="role-join">＋</div></div>
-            <span class="abstract-caption">角色与信息关系示意 · 非原始系统界面</span>
-          </button>
-        </article>
-
-        <article class="project table-project project-wide" data-category="concept" id="project-table">
-          <button class="table-visual" type="button" data-project="table" aria-label="查看驻车随行工作台概念"><img src="./assets/parked-table-concept.png" width="593" height="449" alt="驻车随行工作台 AI 辅助概念图，展示可折叠桌面与收纳区域" loading="lazy"></button>
-          <div class="project-copy table-copy"><div class="project-meta"><span class="tag">独立概念</span><span>06 / PRODUCT EXPERIENCE</span></div><h3>停下来，<br>也可以从容展开。</h3><p>驻车随行工作台。探索后排短时工作中，桌面展开、小物就位与收拢携行的体验。</p><button class="text-link" type="button" data-project="table">看看概念 <svg class="icon"><use href="#chevron"/></svg></button><small class="project-disclosure">AI 辅助概念视觉 · 尚未工程验证</small></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="about-section" id="about" aria-labelledby="about-title">
-      <div class="section-container about-grid">
-        <div class="about-heading">
-          <p class="eyebrow">ABOUT RUIQI</p>
-          <h2 id="about-title">理解人。<br>也理解复杂性。</h2>
-          <div class="about-profile">
-            <img class="about-portrait" src="./assets/ruiqi-portrait.png" alt="王瑞琪的个人插画头像" width="1027" height="1531" loading="lazy" decoding="async">
-            <p class="about-name">王瑞琪 <span>Ruiqi Wang</span></p>
-          </div>
-        </div>
-        <div class="about-content"><p class="about-intro">工业设计的训练，让我习惯从场景、动作与限制条件看问题。</p><p>现在，我把这套思考延伸到 AI 产品与车载 HMI，关注复杂任务怎样被清楚表达，以及用户怎样把下一步做下去。</p><dl class="about-facts"><div><dt>教育背景</dt><dd>北京理工大学 · 设计学硕士在读 · 2027 届</dd></div><div><dt>学业荣誉</dt><dd>北京理工大学特等学业奖学金</dd></div><div><dt>设计实践</dt><dd>需求梳理 · PRD · 交互原型</dd></div></dl><div class="pdf-download"><a class="button button-outline" href="./assets/ruiqi-resume.pdf" download="王瑞琪-个人简历.pdf">下载个人简历 <svg class="icon"><use href="#arrow-up"/></svg></a><small>个人简历 · PDF 格式</small></div></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-container"><span>王瑞琪 · 产品与交互设计</span><span>SELECTED PORTFOLIO / 2026</span><a href="#top">回到顶部 ↑</a></footer>
-  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-topbar"><span id="dialog-category">项目详情</span><button class="close-dialog" type="button" aria-label="关闭项目详情"><span>关闭</span><svg class="icon"><use href="#close"/></svg></button></div><div class="dialog-scroll"><div id="dialog-content"></div><div class="dialog-footer"><span>王瑞琪 · 项目与设计思考</span><button class="text-link close-dialog" type="button">返回作品 <svg class="icon"><use href="#arrow"/></svg></button></div></div></dialog>
-</body>
-</html>
+<div class="endline"><span>王瑞琪 / Ruiqi Wang</span><a href="#top">回到顶部 ↑</a></div>
+</section></main></body></html>
